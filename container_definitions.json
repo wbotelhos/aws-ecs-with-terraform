@@ -1,0 +1,15 @@
+[{
+  "command": ["bundle", "exec", "rackup", "-p", "8080", "-E", "production"],
+  "cpu": 1024,
+
+  "environment": [
+    { "name": "MESSAGE", "value": "${message}" }
+  ],
+
+  "image": "${account_id}.dkr.ecr.us-east-1.amazonaws.com/blog:v0.1.0",
+  "name": "app",
+
+  "portMappings": [
+    { "containerPort": 8080, "hostPort": 8080, "protocol": "tcp" }
+  ]
+}]

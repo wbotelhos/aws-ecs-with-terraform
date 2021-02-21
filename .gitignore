@@ -1,0 +1,8 @@
+.DS_Store
+*.backup
+*.info
+*.tfstate
+/.terraform
+/app/.bundle
+/app/vendor
+/ssm_parameter.tf
