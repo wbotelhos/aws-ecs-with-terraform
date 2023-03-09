@@ -9,7 +9,7 @@ resource "aws_db_instance" "default" {
   identifier                = "production"
   instance_class            = "db.t2.micro"
   maintenance_window        = "sun:08:00-sun:09:00"
-  name                      = "blog_production"
+  db_name                   = "blog_production"
   parameter_group_name      = "default.postgres12"
   password                  = data.aws_ssm_parameter.db_instance__password.value
   username                  = "postgres"
